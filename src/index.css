@@ -1,0 +1,44 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.calculator{
+  display: grid;
+  margin-top: 4rem;
+  justify-content: center;
+  grid-template-columns: repeat(4,6rem);
+  grid-template-rows: minmax(7rem,auto) repeat(5,5rem);
+}
+
+.calculator>button{
+  cursor: pointer;
+  font-size: 3rem;
+  border: 1px solid white;
+  outline: none;
+  /* background-color: ; */
+}
+ .span-two{
+  grid-column: span 2;
+ }
+
+ .output{
+  grid-column: 1/-1;
+  background-color:rgb(2, 2, 16);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+ }
+
+ .output .privius-val{
+  color: beige;
+  font-size: 1 rem;
+ }
+
+ .output .current-val{
+  color: white;
+  font-size: 3rem;
+} 
